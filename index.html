@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
@@ -17,38 +18,49 @@
 
         <ul>
             <li>
-                <a href="#"></a>O mnie</li>
+                <a href="#">O mnie</a></li>
             <li>
-                <a href="#"></a>Umiejętnowści</li>
+                <a href="#">Umiejętnowści</a></li>
             <li>
-                <a href="#"></a>Portfilio</li>
+                <a href="#">Portfilio</a></li>
             <li>
-                <a href="#"></a>Kontakt</li>
+                <a href="#">Kontakt</a></li>
 
         </ul>
     </nav>
 
 
-    <header>
+   
 
         <!-- sekcja gdzie wyswietla się imie i nazwisko   -->
         <section id="imie">
-
-            <h1>Marcin Mika</h1>
-
+            <header>
+                 <h1>Marcin <span id="nazwisko">Mika</span></h1>
+                 <h3 id="pod-nazwiskiem">Front-End Developer</h3>
+            </header>           
         </section>
 
         <!--sekcja z opisem o mnie-->
 
         <section id="omnie">
 
-            <h1>O mnie</h1>
-            
-            <div id="moje-foto">
-              
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cupiditate, omnis iste eum? Eius non, animi consequatur ad nihil perspiciatis quae in, hic quas deleniti aliquid facere suscipit? Ullam, in!</p>
-               
-            </div>
+            <header>
+                <h1>O <span>mnie</span></h1>
+            </header>
+
+            <article>
+                <div class="o-mnie-foto">
+                   <figure>
+                        <img class="foto-ja" src="../portfolio/img/jan-nowak.jpg" alt="Moje foto">
+                   </figure>
+                </div>
+
+                <div class="o-mnie-opis">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cupiditate, omnis iste eum? Eius non, animi consequatur ad nihil perspiciatis quae in, hic quas deleniti aliquid facere suscipit? Ullam, in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Quis nesciunt dolores fugit, cum animi ullam possimus quod, facilis iste perferendis quo sequi nostrum rem voluptatem veritatis labore itaque aliquam. Rerum!</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cupiditate, omnis iste eum? Eius non, animi consequatur ad nihil perspiciatis quae in, hic quas deleniti aliquid facere suscipit? Ullam, in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Quis nesciunt dolores fugit, cum animi ullam possimus quod, facilis iste perferendis quo sequi nostrum rem voluptatem veritatis labore itaque aliquam. Rerum!</p>
+                </div>               
+            </article>
+
 
         </section>
 
@@ -56,7 +68,7 @@
 
         <section id="umiejetnosci">
 
-            <h1>Moje umiejetnosci</h1>
+            <h1>Moje <span>umiejetnosci</span></h1>
 
         </section>
 
@@ -64,21 +76,20 @@
 
         <section id="portfolio">
 
-            <h1>portfolio</h1>
-            
-            
+            <h1>Moje <span>portfolio</span></h1>
+
+
 
         </section>
-        
-<!-- sekcja kontakt-->
-    
+
+        <!-- sekcja kontakt-->
+
         <section id="kontakt">
-            
-            <h1>Marcin Mika</h1>
-            
+
+            <h1>Marcin <span>Mika</span></h1>
+
         </section>
 
-    </header>
 
 </body>
 

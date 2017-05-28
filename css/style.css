@@ -1,33 +1,49 @@
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    color: #291f1a;
+}
+
 body{
     margin: 0;
 }
 
 
+
 nav{
     width: 100%;
-    height: 60px;
     position: fixed;
     text-align: right;
     background-color: white;
+    z-index: 10;
 }
 
 nav ul li {
     display: inline-block;
-    padding: 5px;
-    width: 100px;
-    height: 20px;
-    color: #291f1a;
     text-align: center;
+    padding: 20px;
+}
+
+nav ul li a{
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+nav ul li a:hover{
     
+    color: green;
+
 }
 
 section{
     width: 100%;
+    margin: 0;
 }
 /*sekcja gdzie wyswietla się imie i nazwisko*/
 section#imie{
  
-    height: 600px;
+    height: 90vh;
     background-image: url(../img/header-background.jpg);
     background-size: cover;
     text-align: center;
@@ -35,41 +51,85 @@ section#imie{
 }
 
 section#imie h1{
+    font-size: 120px;
     height: 100px;
     display: inline-block;
-    margin-top: 250px;
-    color: firebrick;
+    margin-top: 230px;
     line-height: 100px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
+
+
+
 }
+
+section#imie h1 span#nazwisko{
+    color: green;
+    font-weight: 800;
+}
+
+section#imie h1 span#pod_nazwiskiem{
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+}
+
 
 /*sekcja z opisem o mnie*/
 
 section#omnie{
-    
-    
-    height: 600px;
     background: #f9fcfe;
     text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.75);
+  
 }
 
-div#moje-foto{
-    
-    height: 350px;
-    width: 300px;
-    background-image: url(../img/jan-nowak.jpg);
-    background-size: cover;
-    float: left;
-    padding: 10px;
-    margin-left: 30px;
-    margin-top: 75px;
-    
-    
+section#omnie header {
+    margin: 30px 0;
 }
 
 section#omnie h1{
-    color: black;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 30;
+
 }
+
+section#omnie h1 span{
+    color: green;
+    font-weight: 800;
+}
+
+section#omnie div.o-mnie-foto{
+    width: 50%;
+    float: left;
+    
+}
+
+section#omnie img.foto-ja{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.75);
+}
+
+section#omnie div.o-mnie-opis{
+    width: 50%;  
+    text-align: justify;
+    float: left;
+    line-height: 24px;
+    
+  
+}
+
+
+section#omnie div.o-mnie-opis p{
+    width: 100%;
+   
+}
+
 
 /*sekcja moje umiejetnosci*/
 section#umiejetnosci{
@@ -80,8 +140,8 @@ section#umiejetnosci{
     
 }
 
-section#umiejetnosci h1{
-    
+section#umiejetnosci h1 span{
+    color: green;
 }
 /*sekcja moje portfolio*/
 section#portfolio{
@@ -91,7 +151,11 @@ section#portfolio{
 }
 
 section#portfolio h1{
-    color:aqua; 
+
+}
+
+section#portfolio h1 span{
+    color:green; 
 }
 
 /*Sekcja kontakt*/
@@ -99,8 +163,12 @@ section#portfolio h1{
 section#kontakt{
     height: 400px;
     background-color: #213b50;
+    text-align: center;
 }
 
 section#kontakt h1{
-    color: blueviolet;
+
+}
+section#kontakt h1 span{
+    color: green;
 }
