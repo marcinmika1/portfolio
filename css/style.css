@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    text-align: right;
+    background-color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    height: 20px;
+    color: #291f1a;
+    text-align: center;
+    
+}
+
+section{
+    width: 100%;
+}
+/*sekcja gdzie wyswietla się imie i nazwisko*/
+section#imie{
+ 
+    height: 600px;
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    text-align: center;
+   
+}
+
+section#imie h1{
+    height: 100px;
+    display: inline-block;
+    margin-top: 250px;
+    color: firebrick;
+    line-height: 100px;
+    font-family: 'Lato', sans-serif;
+}
+
+/*sekcja z opisem o mnie*/
+
+section#omnie{
+    
+    
+    height: 600px;
+    background: #f9fcfe;
+    text-align: center;
+}
+
+div#moje-foto{
+    
+    height: 350px;
+    width: 300px;
+    background-image: url(../img/jan-nowak.jpg);
+    background-size: cover;
+    float: left;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 75px;
+    
+    
+}
+
+section#omnie h1{
+    color: black;
+}
+
+/*sekcja moje umiejetnosci*/
+section#umiejetnosci{
+    
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    
+}
+
+section#umiejetnosci h1{
+    
+}
+/*sekcja moje portfolio*/
+section#portfolio{
+    height: 600px;
+    background-color: white;
+    text-align: center;
+}
+
+section#portfolio h1{
+    color:aqua; 
+}
+
+/*Sekcja kontakt*/
+
+section#kontakt{
+    height: 400px;
+    background-color: #213b50;
+}
+
+section#kontakt h1{
+    color: blueviolet;
+}
