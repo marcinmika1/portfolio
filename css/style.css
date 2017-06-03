@@ -1,19 +1,19 @@
-* {
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-    color: #291f1a;
-}
 
 body {
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    color: #291f1a;
 }
 
 nav {
     width: 100%;
     position: fixed;
     text-align: right;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);;
     z-index: 10;
+    
+    
 }
 
 nav ul li {
@@ -67,6 +67,7 @@ section#imie h1 span#pod_nazwiskiem {
     font-size: 40px;
     color: white;
     font-weight: 100;
+  
 }
 
 
@@ -135,7 +136,7 @@ section#umiejetnosci header {
 }
 
 section#umiejetnosci h1 {
-    font-weight: 300;
+    font-weight: 100;
     display: inline-block;
     margin-top: 30;
 }
@@ -189,14 +190,14 @@ section#portfolio header {
 }
 
 
-/*
 section#portfolio h1{
-
+    font-weight: 100;
+    color:black;
 }
-*/
 
 section#portfolio h1 span {
     color: green;
+    font-weight: 800;
 }
 
 
@@ -240,7 +241,6 @@ section#portfolio div.przyklad1 div {
     opacity: 0;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
-    
 }
 
 section#portfolio div.przyklad2 div {
@@ -250,7 +250,6 @@ section#portfolio div.przyklad2 div {
     background-color: rgba(76, 175, 80, 0.3);
     opacity: 0;
     transition: all 0.4s ease-in-out;
-
 }
 
 section#portfolio div.przyklad3 div {
@@ -260,8 +259,9 @@ section#portfolio div.przyklad3 div {
     background-color: rgba(76, 175, 80, 0.3);
     opacity: 0;
     transition: all 0.4s ease-in-out;
-    
 }
+
+
 /*
 section#portfolio div.przyklad3 div.opis3 div{
     border: 2px solid black;
@@ -271,14 +271,13 @@ section#portfolio div.przyklad3 div.opis3 div{
 }
 */
 
-section#portfolio article h3{
+section#portfolio article h3 {
     font-size: 13px;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
     margin-top: 5px;
-    border: 2px solid black; 
-    
+    border: 2px solid black;
 }
 
 section#portfolio div.przyklad1 div:hover {
@@ -299,41 +298,96 @@ section#portfolio div.przyklad3 div:hover {
 section#kontakt {
     background-color: #213b50;
     overflow: hidden;
-    color: #fff;
+    color: white;
 }
 
-section#kontakt h1{
+section#kontakt h1 {
     margin-left: 50px;
     font-size: 38px;
+    text-align: left;
+    color: white;
 }
 
 section#kontakt h1 span {
     color: green;
-    font-size: 38px;
 }
 
-section#kontakt h2{
-    margin-left: 20px;
-}
-
-section#kontakt article#dane{
-     width: 50%;
+section#kontakt article#dane {
+    width: 50%;
     float: left;
 }
 
-section#kontakt adress#dane{
-    display: inline-block;
-    width: 100%;
+section#kontakt adress#dane-adress {
+    margin: 72px 0;
+    font-style: normal;
     background-color: darkcyan;
-    text-align: left;
+    line-height: 25px;
 }
 
+section#kontakt adress#dane-adress h2{
+    margin-left: 50px;
+}
+section#kontakt adress#dane-adress a {
+    color: aqua;
+}
 
-
-section#kontakt article#formulaz{
+section#kontakt article#dane div.social-media-icons a {
     display: inline-block;
-    width: 50%;
-    background-color: aqua;
-    
+    color: white;
+    border: 1px solid white;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    margin-right: 30px;
+    margin-left: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+section#kontakt article#dane  div.social-media-icons a:hover {
+    color: #1ac085;
+    border: 1px solid #1ac085;
 }
 
+section#kontakt article#formulaz {
+    width: 50%;
+    margin-top: 100px;
+    float: left;
+}
+
+section#kontakt article#formulaz form{
+    width: 70%;
+    float: left;
+}
+
+section#kontakt article#formulaz form input,
+section#kontakt article#formulaz form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2b4a64;
+    border: #2b4a64;
+    color: #fff;
+}
+
+section#kontakt article#formulaz form input:focus,
+section#kontakt article#formulaz form textarea:focus{
+     background-color: #426684;
+}
+
+section#kontakt article#formulaz form input[type="submit"]{
+        background-color: #1ac056;;
+    color: #fff;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 30px;
+    float: right;
+    border: 1px #1ac056;
+    margin-right: 0;
+}
+
+section#kontakt article#formulaz form input[type="submit"]:hover{
+    background-color: #fff;
+    color: #1ac056;
+    cursor: pointer;
+}
