@@ -298,26 +298,33 @@ section#portfolio div.przyklad3 div:hover {
 
 section#kontakt {
     background-color: #213b50;
-    text-align: center;
+    overflow: hidden;
+    color: #fff;
 }
 
 section#kontakt h1{
     margin-left: 50px;
+    font-size: 38px;
 }
 
 section#kontakt h1 span {
     color: green;
+    font-size: 38px;
+}
+
+section#kontakt h2{
+    margin-left: 20px;
 }
 
 section#kontakt article#dane{
      width: 50%;
+    float: left;
 }
 
 section#kontakt adress#dane{
     display: inline-block;
     width: 100%;
     background-color: darkcyan;
-    float: left;
     text-align: left;
 }
 
