@@ -26,10 +26,11 @@ nav ul li a {
     font-weight: 300;
     text-decoration: none;
     text-transform: lowercase;
+    color: #1ac056;
 }
 
 nav ul li a:hover {
-    color: green;
+    color: #291f1a; 
 }
 
 section {
@@ -63,10 +64,11 @@ section#imie h1 span#nazwisko {
     font-weight: 800;
 }
 
-section#imie h1 span#pod_nazwiskiem {
+section#imie h3{
     font-size: 40px;
     color: white;
     font-weight: 100;
+    
   
 }
 
